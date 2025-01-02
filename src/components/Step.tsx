@@ -5,7 +5,7 @@ const Step = ({ text, end = false }: { text: string; end?: boolean }) => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          fill="currentColor"
+          className="dark:fill-white"
           width="25"
           height="25"
         >
@@ -15,9 +15,11 @@ const Step = ({ text, end = false }: { text: string; end?: boolean }) => {
             clipRule="evenodd"
           />
         </svg>
-        {end == false && <div className="w-1 h-10 bg-black"></div>}
+        {end == false && (
+          <div className="w-1 h-10 bg-black dark:bg-white"></div>
+        )}
       </div>
-      <p className="font-semibold">{text}</p>
+      <p className="font-semibold dark:text-white">{text}</p>
     </div>
   );
 };
