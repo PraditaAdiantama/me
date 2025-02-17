@@ -5,7 +5,7 @@ const ThemeSwitcher = () => {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    const isClassDark = document.body.classList.contains("dark");
+    const isClassDark = document.documentElement.classList.contains("dark");
     const isPreferDark = localStorage.getItem("theme");
     if (isClassDark && !isPreferDark) {
       setDark(true);
@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
   }, []);
 
   useEffect(() => {
-    document.body.classList.toggle("dark");
+    document.documentElement?.classList.toggle("dark");
   }, [dark]);
   return (
     <span
