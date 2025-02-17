@@ -19,7 +19,7 @@ const Carier = () => {
 
 const Introduction = () => {
   return (
-    <div className="bg-white dark:bg-slate-800 w-4/2 py-6 md:px-10 px-5 shadow-xl hover:shadow-2xl rounded-xl h-fit">
+    <div className="bg-white dark:bg-slate-800 py-6 md:px-10 px-5 shadow-xl hover:shadow-2xl rounded-xl h-fit">
       <h3 className="text-xl mt-2 font-bold text-center dark:text-white">
         Introduction
       </h3>
